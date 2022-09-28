@@ -3,3 +3,17 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  h2 Transactions:
+  div.container
+    table.table.table-striped
+      thead
+        tr
+          th Date
+          th Amount
+          th Balance
+          each transaction in transactions
+            tr
+              td=transaction.date
+              td=transaction.action === 'deposit' ? '+' + transaction.amount : '-' + transaction.amount
+              td=transaction.balance
+

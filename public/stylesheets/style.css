@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+.table-striped {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: solid 1px black;
+}
