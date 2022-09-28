@@ -9,7 +9,7 @@ const app = express();
 
 require('./lib/connectMongoose');
 
-app.listen(process.env.PORT, () => console.log('Server is running at port' + process.env.PORT));
+app.listen(process.env.PORT, () => console.log('Server is running at port ' + process.env.PORT));
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
