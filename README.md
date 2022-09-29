@@ -25,7 +25,6 @@ To add a transaction use this payload on a post request to /transactions:
 
 ```
 {
-   balance: Number,
    date: String,
    amount: Number,
    action: 'deposit' | 'withdraw',
