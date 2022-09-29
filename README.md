@@ -20,3 +20,14 @@ This project needs docker and docker-compose to run it.
    docker-compose -f docker-compose.yml -f docker-compose.yml up -d --build
    ```
 3. Run `docker-compose up` to check if the app is running correctly.
+
+To add a transaction use this payload on a post request to /transactions:
+
+```
+{
+   balance: Number,
+   date: String,
+   amount: Number,
+   action: 'deposit' | 'withdraw',
+}
+```
